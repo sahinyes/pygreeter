@@ -15,5 +15,5 @@ class TestGreeter(unittest.TestCase):
             with self.subTest(name=case.get("name")):
                 name = case.get("name")
                 expected_output = case.get("expected_output")
-                output = greet(input)
+                output = greet(name)
                 self.assertEqual(output, expected_output)
